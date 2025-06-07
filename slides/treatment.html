@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诊断分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            height: 100vh;
+            background: white;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .diagnosis-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .diagnosis-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease;
+        }
+        .diagnosis-title {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .diagnosis-list {
+            list-style: none;
+            padding: 0;
+        }
+        .diagnosis-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .diagnosis-icon {
+            color: #3498db;
+            font-size: 1.2em;
+            margin-top: 3px;
+        }
+        .diagnosis-text {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">诊断分析</h1>
+        
+        <div class="diagnosis-content">
+            <div class="diagnosis-card">
+                <h2 class="diagnosis-title">
+                    <i class="fas fa-stethoscope"></i>
+                    诊断结果
+                </h2>
+                <p class="diagnosis-text" style="font-size: 1.2em; color: #2c3e50; margin-bottom: 20px;">
+                    挥鞭样损伤（Whiplash Associated Disorders, WAD）后遗症
+                </p>
+                <ul class="diagnosis-list">
+                    <li class="diagnosis-item">
+                        <i class="fas fa-check-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">颈椎小关节功能紊乱：微小错位、关节活动异常（过紧或过松）</span>
+                    </li>
+                    <li class="diagnosis-item">
+                        <i class="fas fa-check-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">软组织慢性炎症与纤维化：导致持续疼痛、僵硬</span>
+                    </li>
+                    <li class="diagnosis-item">
+                        <i class="fas fa-check-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">深层颈肌功能障碍：颈椎的核心稳定肌群受损或抑制</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="diagnosis-card">
+                <h2 class="diagnosis-title">
+                    <i class="fas fa-search"></i>
+                    病因分析
+                </h2>
+                <ul class="diagnosis-list">
+                    <li class="diagnosis-item">
+                        <i class="fas fa-exclamation-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">车祸瞬间的快速过伸-过屈动作造成损伤</span>
+                    </li>
+                    <li class="diagnosis-item">
+                        <i class="fas fa-exclamation-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">软组织的微小撕裂、出血、炎症反应</span>
+                    </li>
+                    <li class="diagnosis-item">
+                        <i class="fas fa-exclamation-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">随后的瘢痕形成、粘连、韧带松弛</span>
+                    </li>
+                    <li class="diagnosis-item">
+                        <i class="fas fa-exclamation-circle diagnosis-icon"></i>
+                        <span class="diagnosis-text">本体感觉紊乱：关节、韧带内的感受器受损</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总结</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            height: 100vh;
+            background: white;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .summary-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .summary-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease;
+        }
+        .summary-title {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .summary-list {
+            list-style: none;
+            padding: 0;
+        }
+        .summary-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .summary-icon {
+            color: #3498db;
+            font-size: 1.2em;
+            margin-top: 3px;
+        }
+        .summary-text {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">总结</h1>
+        
+        <div class="summary-content">
+            <div class="summary-card">
+                <h2 class="summary-title">
+                    <i class="fas fa-list-ol"></i>
+                    治疗三部曲
+                </h2>
+                <ul class="summary-list">
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">针刺松其筋</span>：快速解除肌肉痉挛，打开通路</span>
+                    </li>
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">手法理其络</span>：精雕细琢，深入肌肉筋膜</span>
+                    </li>
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">正骨定其位</span>：精准调整，解决结构问题</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="summary-card">
+                <h2 class="summary-title">
+                    <i class="fas fa-lightbulb"></i>
+                    康复关键
+                </h2>
+                <ul class="summary-list">
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">医生治疗是辅助</span>：专业指导与治疗</span>
+                    </li>
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">自我管理是根本</span>：坚持康复锻炼</span>
+                    </li>
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">正确姿势很重要</span>：预防复发</span>
+                    </li>
+                    <li class="summary-item">
+                        <i class="fas fa-check-circle summary-icon"></i>
+                        <span class="summary-text"><span class="highlight">坚持康复锻炼</span>：保持长期效果</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

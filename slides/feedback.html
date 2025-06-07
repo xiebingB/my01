@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>治疗方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            height: 100vh;
+            background: white;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .treatment-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .treatment-step {
+            display: flex;
+            gap: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex-grow: 1;
+        }
+        .step-title {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .step-details {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .step-item i {
+            color: #3498db;
+            margin-top: 3px;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">治疗方案</h1>
+        
+        <div class="treatment-timeline">
+            <div class="treatment-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">
+                        <i class="fas fa-needle"></i>
+                        针刺治疗（25分钟）
+                    </h3>
+                    <ul class="step-list">
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>放松浅层肌肉：颈夹脊、风池、肩井、天宗等</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>深层刺激与修复：关节突关节周围、关节囊、棘间韧带等</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>温针灸或低频脉冲电针辅助</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>针刺阿是穴（最痛点、僵硬点）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="treatment-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">
+                        <i class="fas fa-hands"></i>
+                        手法理筋（30分钟）
+                    </h3>
+                    <ul class="step-list">
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>浅层肌肉放松</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>深层软组织处理：项韧带、关节突关节等</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>关节松动术：轻柔、节律性、非冲击性</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="treatment-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">
+                        <i class="fas fa-bone"></i>
+                        正骨归位
+                    </h3>
+                    <ul class="step-list">
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>谨慎评估，必要时进行轻柔调整</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>重点放在稳定性训练</span>
+                        </li>
+                        <li class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>避免强力正骨，防止加重不稳</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

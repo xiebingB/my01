@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>患者信息</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            height: 100vh;
+            background: white;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease;
+        }
+        .info-title {
+            font-size: 1.5em;
+            color: #34495e;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .info-label {
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+        .info-value {
+            color: #2c3e50;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">患者基本信息</h1>
+        
+        <div class="info-card">
+            <h2 class="info-title">
+                <i class="fas fa-user"></i>
+                基本信息
+            </h2>
+            <div class="info-content">
+                <div class="info-item">
+                    <span class="info-label">姓名：</span>
+                    <span class="info-value">赵先生</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">年龄：</span>
+                    <span class="info-value">50岁</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">职业：</span>
+                    <span class="info-value">司机</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h2 class="info-title">
+                <i class="fas fa-history"></i>
+                病史
+            </h2>
+            <div class="info-content">
+                <div class="info-item">
+                    <span class="info-label">发病时间：</span>
+                    <span class="info-value">一年前</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">发病原因：</span>
+                    <span class="info-value">被追尾导致挥鞭样损伤</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">影像学检查：</span>
+                    <span class="info-value">颈椎生理曲度变直，无骨折脱位</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

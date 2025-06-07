@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例十：车祸"挥鞭伤"后遗症</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            padding: 40px;
+            background: white;
+            position: relative;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: #3498db;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    
+    <div class="slide active">
+        <div class="slide-content">
+            <h1>案例十：车祸"挥鞭伤"后遗症</h1>
+            <h2>慢性颈痛与不稳感</h2>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>患者基本信息</h2>
+            <ul>
+                <li>姓名：赵先生</li>
+                <li>年龄：50岁</li>
+                <li>职业：司机</li>
+                <li>病史：一年前被追尾，导致挥鞭样损伤</li>
+                <li>影像学：颈椎生理曲度变直，无骨折脱位</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>主诉症状</h2>
+            <ul>
+                <li>持续性颈部酸痛、僵硬</li>
+                <li>阴雨天或长时间开车后加重</li>
+                <li>转头时有"沙子摩擦"声</li>
+                <li>特定角度出现"卡住"感</li>
+                <li>左肩牵扯痛</li>
+                <li>颈部"不结实"感</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>体格检查</h2>
+            <h3>望诊</h3>
+            <ul>
+                <li>颈部僵硬</li>
+                <li>活动不自然</li>
+                <li>颈椎生理曲度变直</li>
+            </ul>
+            <h3>触诊</h3>
+            <ul>
+                <li>C4-C6棘突及关节突关节压痛</li>
+                <li>项韧带增厚、发硬</li>
+                <li>深层肌肉紧张但乏力</li>
+                <li>浅层肌肉慢性劳损</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>诊断分析</h2>
+            <h3>挥鞭样损伤（WAD）后遗症</h3>
+            <ul>
+                <li>颈椎小关节功能紊乱</li>
+                <li>软组织慢性炎症与纤维化</li>
+                <li>深层颈肌功能障碍</li>
+                <li>本体感觉紊乱</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>治疗方案</h2>
+            <h3>1. 针刺治疗（25分钟）</h3>
+            <ul>
+                <li>浅层肌肉放松</li>
+                <li>深层刺激与修复</li>
+                <li>温针灸/电针辅助</li>
+                <li>阿是穴治疗</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>治疗方案</h2>
+            <h3>2. 手法理筋（30分钟）</h3>
+            <ul>
+                <li>浅层肌肉放松</li>
+                <li>深层软组织处理</li>
+                <li>关节松动术</li>
+                <li>针对性松解</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>治疗方案</h2>
+            <h3>3. 正骨归位</h3>
+            <ul>
+                <li>谨慎评估</li>
+                <li>必要时进行轻柔调整</li>
+                <li>重点放在稳定性训练</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>治疗反馈</h2>
+            <ul>
+                <li>颈部僵硬感减轻</li>
+                <li>酸痛缓解约40%</li>
+                <li>"沙沙声"和"卡顿感"改善</li>
+                <li>颈部活动度增加</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>后续建议</h2>
+            <ul>
+                <li>每周治疗1-2次</li>
+                <li>持续数月</li>
+                <li>动态调整治疗方案</li>
+                <li>配合物理因子治疗</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>康复重点</h2>
+            <h3>核心稳定性训练</h3>
+            <ul>
+                <li>颈部深层肌肉训练</li>
+                <li>等长收缩练习</li>
+                <li>头部悬吊训练</li>
+            </ul>
+            <h3>日常注意事项</h3>
+            <ul>
+                <li>改善开车姿势</li>
+                <li>调整头枕位置</li>
+                <li>保持正确坐姿</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>案例启示</h2>
+            <ul>
+                <li>外伤可能造成长期影响</li>
+                <li>治疗需全面评估</li>
+                <li>稳定性训练比反复正骨更重要</li>
+                <li>治疗方案需因人制宜</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <h2>总结</h2>
+            <h3>治疗三部曲</h3>
+            <ul>
+                <li>针刺松其筋</li>
+                <li>手法理其络</li>
+                <li>正骨定其位</li>
+            </ul>
+            <h3>康复关键</h3>
+            <ul>
+                <li>医生治疗是辅助</li>
+                <li>自我管理是根本</li>
+                <li>正确姿势很重要</li>
+                <li>坚持康复锻炼</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">上一页</button>
+        <button onclick="nextSlide()">下一页</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressBar = document.querySelector('.progress-bar');
+
+        function updateProgress() {
+            const progress = ((currentSlide + 1) / slides.length) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            updateProgress();
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // 键盘控制
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // 触摸控制
+        let touchStartX = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+
+        // 初始化进度条
+        updateProgress();
+    </script>
+</body>
+</html>

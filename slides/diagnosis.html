@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>症状描述</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            height: 100vh;
+            background: white;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .symptom-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeIn 0.5s ease;
+        }
+        .symptom-card:hover {
+            transform: translateY(-5px);
+        }
+        .symptom-icon {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        .symptom-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .symptom-description {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">主诉症状</h1>
+        
+        <div class="symptoms-grid">
+            <div class="symptom-card">
+                <div class="symptom-icon">
+                    <i class="fas fa-pain"></i>
+                </div>
+                <h3 class="symptom-title">持续性疼痛</h3>
+                <p class="symptom-description">颈部持续性酸痛、僵硬，像"生锈"了一样，尤其在阴雨天或开车时间长了以后加重。</p>
+            </div>
+
+            <div class="symptom-card">
+                <div class="symptom-icon">
+                    <i class="fas fa-head-side-mask"></i>
+                </div>
+                <h3 class="symptom-title">活动异常</h3>
+                <p class="symptom-description">转头时经常感觉里面有"沙子摩擦"的声音，或者在某个角度会"卡住"。</p>
+            </div>
+
+            <div class="symptom-card">
+                <div class="symptom-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="symptom-title">不稳感</h3>
+                <p class="symptom-description">总感觉自己的脖子"不结实"，心里没底。有时左肩会有牵扯痛，但不麻。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
